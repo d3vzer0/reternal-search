@@ -1,0 +1,8 @@
+requests
+amqp
+celery
+redis
+vine>=1.3.0
+marshmallow
+PyYAML
+splunk-sdk
