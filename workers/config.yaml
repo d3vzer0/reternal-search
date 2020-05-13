@@ -1,0 +1,17 @@
+splunk:
+  name: Splunk
+  description: Splunk is a software platform to search, analyze and visualize the machine-generated data gathered from the websites, applications, sensors, devices etc
+  thumbnail: https://www.splunk.com/content/dam/splunk2/images/screenshots/conf19/enterprise/enterprise-desktop-screenshot-950x584.png
+  enabled: true
+  query:
+    run: search.modules.splunk.run
+  
+elastic:
+  name: Elastic
+  description: Elasticsearch is a highly scalable open-source full-text search and analytics engine. It allows you to store, search, and analyze big volumes of data quickly and in near real time
+  thumbnail: 
+  enabled: true
+  query:
+    run: search.modules.elastic.run
+  
+    
