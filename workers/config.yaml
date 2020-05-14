@@ -5,6 +5,7 @@ splunk:
   enabled: true
   query:
     run: search.modules.splunk.run
+    sourcetypes: search.modules.splunk.sourcetypes
   
 elastic:
   name: Elastic
