@@ -1,18 +1,20 @@
 splunk:
   name: Splunk
   description: Splunk is a software platform to search, analyze and visualize the machine-generated data gathered from the websites, applications, sensors, devices etc
-  thumbnail: https://www.splunk.com/content/dam/splunk2/images/screenshots/conf19/enterprise/enterprise-desktop-screenshot-950x584.png
+  thumbnail: https://dev.splunk.com/static/welcome-temp-314faa6e6c9e2b307707eccf79deb870.png
   enabled: true
   query:
-    run: search.modules.splunk.run
-    sourcetypes: search.modules.splunk.sourcetypes
+    run: search.query.splunk.run
+  indices:
+    run: search.indices.splunk.run
+  sourcetypes:
+    run: search.sourcetypes.splunk.run
+
+# elastic:
+#   name: Elastic
+#   description: Elasticsearch is a highly scalable open-source full-text search and analytics engine. It allows you to store, search, and analyze big volumes of data quickly and in near real time
+#   thumbnail: 
+#   enabled: true
+#   query:
+#     run: search.query.elastic.run
   
-elastic:
-  name: Elastic
-  description: Elasticsearch is a highly scalable open-source full-text search and analytics engine. It allows you to store, search, and analyze big volumes of data quickly and in near real time
-  thumbnail: 
-  enabled: true
-  query:
-    run: search.modules.elastic.run
-  
-    
