@@ -17,7 +17,7 @@ class Splunk:
         search_job = self.service.jobs.export(query,
             earliest_time=earliest_time,  latest_time=latest_time, 
             search_mode="normal"
-        )
+        )      
         reader = results.ResultsReader(search_job)
-        result_rows = [result for result in reader if isinstance(result,dict)]
+        result_rows = [{ key: value for key, value in result.items() } for result in reader if isinstance(result, dict)]
         return result_rows
