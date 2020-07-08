@@ -6,7 +6,7 @@ import logging
 
 empirelog = logging.getLogger('rtsplunk')
 
-# Generic EMPIRE API class
+# Generic SPLUNK API class
 class Splunk:
     def __init__(self, host=config['SPLUNK_HOST'], port=config['SPLUNK_PORT'], app_context=config['SPLUNK_APP'],
         token=config['SPLUNK_TOKEN']):
