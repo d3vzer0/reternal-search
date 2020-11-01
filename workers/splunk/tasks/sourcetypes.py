@@ -5,5 +5,5 @@ from workers import app
 def get_sourcetypes(earliest_time: str, latest_time: str):
     ''' Run splunk query to get sourcetypes'''
     query = '| metadata type=sourcetypes index=*'
-    get_sourcetypes = Splunk(app_context='ThreatHunting').search(query, earliest_time)
+    get_sourcetypes = Splunk().search(query, earliest_time)
     return get_sourcetypes

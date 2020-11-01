@@ -2,7 +2,7 @@ splunk:
   name: Splunk
   description: Splunk is a software platform to search, analyze and visualize the machine-generated data gathered from the websites, applications, sensors, devices etc
   thumbnail: https://dev.splunk.com/static/welcome-temp-314faa6e6c9e2b307707eccf79deb870.png
-  enabled: true
+  enabled: false
   query:
     run: search.query.splunk.run
   indices:
