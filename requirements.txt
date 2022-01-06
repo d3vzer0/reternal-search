@@ -1,6 +1,6 @@
 requests
 amqp
-celery==5.0.0
+celery==5.2.2
 redis
 marshmallow
 splunk-sdk
